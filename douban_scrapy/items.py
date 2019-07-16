@@ -8,12 +8,13 @@
 import scrapy
 
 
-class DoubanMoviesItem(scrapy.Item):
-    rank = scrapy.Field()
+class DoubanMoviesTop250Item(scrapy.Item):
+    movie_rank = scrapy.Field()
     movie_name = scrapy.Field()
-    img_url = scrapy.Field()
-    detail = scrapy.Field()
+    movie_detail = scrapy.Field()
     rating_num = scrapy.Field()
     comment_num = scrapy.Field()
-    remark = scrapy.Field()
     quote = scrapy.Field()
+    request_url = scrapy.Field()
+    image_urls = scrapy.Field()
+    images = scrapy.Field()
